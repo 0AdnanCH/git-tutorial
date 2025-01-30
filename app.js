@@ -3,10 +3,9 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.send('hello world');
+  res.render('index');
 });
 
 app.listen(3000, () => {
   console.log('server runnimg at http://localhost:3000');
 });
-
